@@ -2,6 +2,15 @@
 <html>
   <head>
     <title>PUP UP!</title>
+    <script type="text/javascript">
+      var pup_up_url = 'http://agb.me/pupup/';
+      function pup_up_more() {
+        var pupup = window.open(pup_up_url, 'PUP UP', 'height=850,width=830');
+        if (window.focus) {
+          pupup.focus()
+        }
+      }
+    </script>
   </head>
   <body>
     <img src="http://www.randomdoggiegenerator.com/randomdoggie.php?n=1" height=249 width=249 />
@@ -14,7 +23,6 @@
     <img src="http://www.randomdoggiegenerator.com/randomdoggie.php?n=8" height=249 width=249 />
     <img src="http://www.randomdoggiegenerator.com/randomdoggie.php?n=9" height=249 width=249 />
     <br />
-
-    <a href="javascript:var win=window.open('http://agb.me/pupup/', 'PUP UP', 'height=850,width=820'); if (window.focus) {win.focus()}">PUP UP MORE!</a>
+    <a href="javascript:pup_up_more()">PUP UP MORE!</a>
   </body>
 </html>
