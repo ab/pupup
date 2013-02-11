@@ -5,7 +5,9 @@
     <script type="text/javascript">
       var pup_up_url = 'http://agb.me/pupup/';
       function pup_up_more() {
-        var pupup = window.open(pup_up_url, 'PUP UP', 'height=850,width=830');
+        var i = new Date().getTime() / 1000;
+        var pupup = window.open(pup_up_url, 'PUP UP ' + i,
+                  'height=815,width=800,toolbar=0,menubar=0');
         if (window.focus) {
           pupup.focus()
         }
